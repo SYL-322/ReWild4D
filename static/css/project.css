@@ -117,6 +117,19 @@ body {
   box-shadow: var(--shadow-xl);
 }
 
+.citation-section .hero-body {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.bibtex-entry {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 8px !important;
+  line-height: 1.55;
+  white-space: pre;
+}
+
 @media screen and (max-width: 768px) {
   .publication-header .hero-body {
     padding-top: 2.5rem;
@@ -137,5 +150,10 @@ body {
 
   .teaser-image-caption {
     font-size: 0.95rem;
+  }
+
+  .bibtex-entry {
+    padding: 1rem !important;
+    font-size: 0.78rem !important;
   }
 }

@@ -4,21 +4,32 @@ body {
 }
 
 .publication-header .hero-body {
-  padding-bottom: 2.25rem;
+  padding-top: 4.5rem;
+  padding-bottom: 3rem;
 }
 
 .publication-title {
   max-width: 1050px;
   margin-right: auto !important;
+  margin-bottom: 2rem !important;
   margin-left: auto !important;
   letter-spacing: 0 !important;
+  line-height: 1.18 !important;
 }
 
 .publication-venue-block {
-  margin-top: -0.75rem;
+  margin-top: 0.15rem;
+  margin-bottom: 1.75rem !important;
+  line-height: 1.65;
+}
+
+.presentation-note {
+  color: #ef4444;
+  font-weight: 600;
 }
 
 .publication-link-column {
+  padding-top: 0.25rem;
   padding-bottom: 0;
 }
 
@@ -137,6 +148,12 @@ body {
 
   .publication-title {
     font-size: 2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .publication-venue-block {
+    margin-bottom: 1.4rem !important;
+    line-height: 1.55;
   }
 
   .abstract-section {

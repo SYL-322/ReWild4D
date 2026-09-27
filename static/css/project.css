@@ -118,14 +118,129 @@ body {
   background: #000;
 }
 
-.video-card {
-  overflow: hidden;
+.example-gallery {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.gallery-track {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid var(--border-color);
-  border-radius: var(--border-radius-lg);
-  background: #000;
-  box-shadow: var(--shadow-xl);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow-md);
+}
+
+.gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-track:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.gallery-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  margin: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.gallery-slide figcaption {
+  display: flex;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.8rem;
+}
+
+.gallery-arrow {
+  display: inline-flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.gallery-arrow:hover:not(:disabled),
+.gallery-arrow:focus-visible {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.gallery-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.gallery-position {
+  min-width: 3.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.15rem;
+  margin-top: 0.35rem;
+}
+
+.gallery-dot {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.gallery-dot::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--text-light);
+  content: '';
+}
+
+.gallery-dot[aria-current='true']::after {
+  background: var(--primary-color);
+}
+
+.gallery-dot:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 1px;
 }
 
 .citation-section .hero-body {

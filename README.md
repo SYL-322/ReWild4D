@@ -6,11 +6,12 @@ Static academic project page prepared for GitHub Pages.
 
 ```text
 index.html
+scripts/   Video splitting tool for the local PPT exports
 static/
   css/       Template and project styles
   images/    Teaser and pipeline figures
   js/        Local page scripts and icons
-  videos/    Comparison, results, application, and limitations
+  videos/    Individual examples for the four video sections
 ```
 
 ## Public Assets
@@ -19,10 +20,16 @@ static/
 | --- | --- |
 | `static/images/teaser.jpg` | Paper teaser |
 | `static/images/pipeline.jpg` | Method pipeline |
-| `static/videos/results-gallery.mp4` | Results Gallery, PPT slides 1-8 |
-| `static/videos/comparison.mp4` | Comparison, PPT slides 1-7 |
-| `static/videos/application.mp4` | Application, PPT slides 9-11 |
-| `static/videos/limitations.mp4` | Limitations, PPT slides 12-15 |
+| `static/videos/results-gallery/*.mp4` | Seven Results Gallery examples, PPT slides 2-8 |
+| `static/videos/comparison/*.mp4` | Six comparisons, PPT slides 2-7 |
+| `static/videos/application/*.mp4` | Two application examples, PPT slides 10-11 |
+| `static/videos/limitations/*.mp4` | Three limitation examples, PPT slides 13-15 |
+
+The four combined MP4 files are retained locally as the source exports. To
+regenerate the individual clips, run `scripts/split_gallery_videos.py` with an
+`--ffmpeg` path. The script reads slide timing from the two PPTX files in the
+parent directory (or `--pptx-dir`) and omits the section title slides. The
+combined MP4 files are inputs to this script and are not needed by the page.
 
 ## GitHub Pages
 
@@ -32,5 +39,5 @@ chosen branch. `.nojekyll` keeps the static asset directories unchanged.
 The page is based on the
 [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template).
 
-The Paper, Supplementary, and Code buttons are disabled placeholders. Replace
-them with public URLs in `index.html` when those links become available.
+The Paper and Supplementary buttons are disabled placeholders. The arXiv and
+Code buttons link to the public paper page and repository.

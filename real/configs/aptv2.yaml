@@ -1,0 +1,31 @@
+# APTv2: short clips, 10k iterations
+iterations: 10000
+canonical_end: 0
+warm_up: 0
+densify_until_iter: 10000
+position_lr_init: 0.001
+position_lr_final: 0.0001
+position_lr_max_steps: 20000
+deform_lr_max_steps: 20000
+
+# data / model
+train_on_val_frames: false
+deform_scale: false
+
+# regularization schedules
+two_view_reg: true
+pose_sup_until: 2000
+pose_trans_reg_from: 2000
+pose_trans_reg_until: 5000
+use_normal_reg: true
+normal_reg_mode: spin
+normal_reg_from: 1000
+normal_reg_until: 8000
+use_skin_sparse: false
+skin_reg_until: 5000
+compact_until: 8000
+lambda_compact: 0.15
+freeze_voxel_weights_at: 5000
+time_noise_std_frames: 1.0
+time_noise_steps: 10000
+pose_noise_steps: 4000

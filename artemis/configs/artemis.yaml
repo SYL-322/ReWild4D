@@ -1,0 +1,22 @@
+# Artemis: monocular optimization, 20k iterations
+iterations: 20000
+canonical_end: 1000
+warm_up: 4000
+densify_until_iter: 18000
+prune_max_screen_size: 0.0  # pixels; 0 disables screen-size pruning
+position_lr_init: 0.005
+position_lr_final: 0.0005
+position_lr_max_steps: 20000
+deform_lr_max_steps: 20000
+init_scale: 0.001
+
+# regularization schedules
+pose_trans_reg_from: 4000
+pose_trans_reg_until: 10000
+use_normal_reg: true
+normal_reg_from: 5000
+normal_reg_until: 10000
+skin_reg_until: 10000
+lambda_compact: 0.1
+compact_until: 10000
+time_noise_steps: 20000

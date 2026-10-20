@@ -1,0 +1,22 @@
+name: rewild4d
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.5.1
+  - torchvision=0.20.1
+  - pytorch-cuda=12.1
+  - pip:
+      - numpy==1.26.4
+      - scipy
+      - pillow==11.2.1
+      - matplotlib
+      - tqdm
+      - pyyaml
+      - plyfile
+      - transforms3d
+      - lpips==0.1.4
+      - piq==0.8.0

@@ -1,0 +1,30 @@
+# DAVIS_processed: in-the-wild animal videos, 20k iterations
+iterations: 20000
+canonical_end: 0
+warm_up: 0
+densify_until_iter: 15000
+position_lr_init: 0.005
+position_lr_final: 0.0005
+position_lr_max_steps: 20000
+deform_lr_max_steps: 20000
+
+# data / model
+train_on_val_frames: false
+deform_scale: true
+
+# regularization schedules
+two_view_reg: false
+pose_sup_until: 4000
+pose_trans_reg_from: 4000
+pose_trans_reg_until: 10000
+use_normal_reg: true
+normal_reg_mode: yaw_pitch
+normal_reg_from: 5000
+normal_reg_until: 10000
+use_skin_sparse: true
+skin_reg_until: 10000
+compact_until: 10000
+lambda_compact: 0.1
+freeze_voxel_weights_at: -1
+time_noise_steps: 20000
+pose_noise_steps: 7000

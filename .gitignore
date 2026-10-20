@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+*.so
+data/
+output/
+evaluation/metrics/fvd/styleganv/i3d_torchscript.pt

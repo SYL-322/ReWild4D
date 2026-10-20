@@ -1,0 +1,28 @@
+{
+  "include": [
+    ".gitignore",
+    "README.md",
+    "assets",
+    "LICENSE.md",
+    "environment.yml",
+    "release_manifest.json",
+    "scripts",
+    "rewild_common",
+    "real",
+    "artemis",
+    "evaluation",
+    "submodules/diff-gaussian-rasterization/LICENSE.md",
+    "submodules/diff-gaussian-rasterization/setup.py",
+    "submodules/diff-gaussian-rasterization/CMakeLists.txt",
+    "submodules/diff-gaussian-rasterization/ext.cpp",
+    "submodules/diff-gaussian-rasterization/rasterize_points.cu",
+    "submodules/diff-gaussian-rasterization/rasterize_points.h",
+    "submodules/diff-gaussian-rasterization/cuda_rasterizer",
+    "submodules/diff-gaussian-rasterization/diff_gauss",
+    "submodules/diff-gaussian-rasterization/third_party/glm/glm",
+    "submodules/diff-gaussian-rasterization/third_party/glm/copying.txt"
+  ],
+  "source_suffixes": [".py", ".sh", ".yaml", ".yml", ".md", ".txt", ".h", ".hpp", ".inl", ".cu", ".cpp", ".json", ".jpg", ".gif"],
+  "exclude_directories": ["__pycache__", ".git", "build", "dist", "data", "output", "experiments", "tests"],
+  "exclude_suffixes": [".pyc", ".pyo", ".so", ".o", ".a", ".pt", ".pth", ".ckpt"]
+}

@@ -43,7 +43,7 @@ normal, and alpha rendering. On top of that fork, we:
 
 ## Data and Download
 
-Download the datasets you need from **Assets** on this repository's **Releases** page.
+Download the datasets you need from the [release page](https://github.com/SYL-322/ReWild4D/releases/tag/v1.0.0).
 
 The processed data includes RGB crops, foreground masks, cameras, Fauna initialization, and Artemis
 evaluation ground truth. No mask generation or Fauna inference is needed.

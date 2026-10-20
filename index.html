@@ -33,6 +33,20 @@
 
   <title>Progressive Pose-Guided 4D Animal Reconstruction</title>
 
+  <script>
+    if (window.location.hostname === 'syl-322.github.io' &&
+        window.location.pathname.startsWith('/ReWild4D/')) {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      const analyticsScript = document.createElement('script');
+      analyticsScript.async = true;
+      analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-L35KXFDLRB';
+      document.head.appendChild(analyticsScript);
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-L35KXFDLRB');
+    }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -100,6 +114,7 @@
 
                   <span class="link-block">
                     <a href="https://github.com/SYL-322/ReWild4D"
+                       data-code-link
                        class="external-link button is-normal is-rounded is-dark"
                        target="_blank"
                        rel="noopener noreferrer">

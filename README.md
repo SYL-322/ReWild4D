@@ -9,7 +9,7 @@ index.html
 scripts/   Video splitting tool for the local PPT exports
 static/
   css/       Template and project styles
-  images/    Teaser and pipeline figures
+  images/    Teaser, pipeline, and gallery preview frames
   js/        Local page scripts and icons
   videos/    Individual examples for the four video sections
 ```
@@ -20,6 +20,7 @@ static/
 | --- | --- |
 | `static/images/teaser.jpg` | Paper teaser |
 | `static/images/pipeline.jpg` | Method pipeline |
+| `static/images/gallery/*/*.jpg` | Static previews for the adjacent gallery items |
 | `static/videos/results-gallery/*.mp4` | Seven Results Gallery examples, PPT slides 2-8 |
 | `static/videos/comparison/*.mp4` | Six comparisons, PPT slides 2-7 |
 | `static/videos/application/*.mp4` | Two application examples, PPT slides 10-11 |
@@ -39,5 +40,5 @@ chosen branch. `.nojekyll` keeps the static asset directories unchanged.
 The page is based on the
 [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template).
 
-The Paper and Supplementary buttons are disabled placeholders. The arXiv and
-Code buttons link to the public paper page and repository.
+The Paper and arXiv buttons link to the paper, and Code links to the public
+repository.

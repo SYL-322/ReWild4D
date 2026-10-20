@@ -79,19 +79,13 @@
               <div class="column has-text-centered publication-link-column">
                 <div class="publication-links">
                   <span class="link-block">
-                    <!-- Replace with an arXiv or publisher URL when available. -->
-                    <button class="button is-normal is-rounded is-dark pending-link" type="button" disabled>
+                    <a href="https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/7269.pdf"
+                       class="external-link button is-normal is-rounded is-dark"
+                       target="_blank"
+                       rel="noopener noreferrer">
                       <span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span>
                       <span>Paper</span>
-                    </button>
-                  </span>
-
-                  <span class="link-block">
-                    <!-- Replace with a supplementary-material URL when available. -->
-                    <button class="button is-normal is-rounded is-dark pending-link" type="button" disabled>
-                      <span class="icon"><i class="fas fa-file-pdf" aria-hidden="true"></i></span>
-                      <span>Supplementary</span>
-                    </button>
+                    </a>
                   </span>
 
                   <span class="link-block">
@@ -187,48 +181,56 @@
           <div class="example-gallery" data-gallery aria-label="Results Gallery">
             <div class="gallery-track" role="region" aria-roledescription="carousel" aria-label="Results Gallery examples" tabindex="0">
               <figure class="gallery-slide" aria-label="1 of 7: Impala">
-                <video class="section-video" controls muted loop playsinline preload="metadata" aria-label="Impala video">
+                <video class="section-video" controls muted loop playsinline preload="metadata" poster="static/images/gallery/results-gallery/impala.jpg" aria-label="Impala video">
                   <source src="static/videos/results-gallery/impala.mp4" type="video/mp4">
                 </video>
                 <figcaption>Impala</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="2 of 7: Sheep">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Sheep video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/results-gallery/sheep.jpg" aria-label="Sheep video">
                   <source src="static/videos/results-gallery/sheep.mp4" type="video/mp4">
                 </video>
                 <figcaption>Sheep</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="3 of 7: Horse">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Horse video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/results-gallery/horse.jpg" aria-label="Horse video">
                   <source src="static/videos/results-gallery/horse.mp4" type="video/mp4">
                 </video>
                 <figcaption>Horse</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="4 of 7: Cow">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Cow video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/results-gallery/cow.jpg" aria-label="Cow video">
                   <source src="static/videos/results-gallery/cow.mp4" type="video/mp4">
                 </video>
                 <figcaption>Cow</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="5 of 7: Gold Fish">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Gold Fish video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/results-gallery/gold-fish.jpg" aria-label="Gold Fish video">
                   <source src="static/videos/results-gallery/gold-fish.mp4" type="video/mp4">
                 </video>
                 <figcaption>Gold Fish</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="6 of 7: Other Animals">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Other Animals video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/results-gallery/other-animals.jpg" aria-label="Other Animals video">
                   <source src="static/videos/results-gallery/other-animals.mp4" type="video/mp4">
                 </video>
                 <figcaption>Other Animals</figcaption>
               </figure>
-              <figure class="gallery-slide" aria-label="7 of 7: Giraffe and Zebra">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Giraffe and Zebra video">
+              <figure class="gallery-slide" aria-label="7 of 7: Other Animals">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/results-gallery/giraffe-and-zebra.jpg" aria-label="Other Animals video">
                   <source src="static/videos/results-gallery/giraffe-and-zebra.mp4" type="video/mp4">
                 </video>
-                <figcaption>Giraffe and Zebra</figcaption>
+                <figcaption>Other Animals</figcaption>
               </figure>
             </div>
+            <button class="gallery-peek gallery-peek-prev" type="button" aria-label="Previous example" title="Previous example" hidden>
+              <img alt="" loading="lazy">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="gallery-peek gallery-peek-next" type="button" aria-label="Next example" title="Next example" hidden>
+              <img alt="" loading="lazy">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
             <div class="gallery-controls">
               <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous example" title="Previous example">
                 <i class="fas fa-chevron-left" aria-hidden="true"></i>
@@ -251,42 +253,50 @@
           <div class="example-gallery" data-gallery aria-label="Comparison">
             <div class="gallery-track" role="region" aria-roledescription="carousel" aria-label="Comparison examples" tabindex="0">
               <figure class="gallery-slide" aria-label="1 of 6: DAVIS">
-                <video class="section-video" controls muted loop playsinline preload="metadata" aria-label="DAVIS video">
+                <video class="section-video" controls muted loop playsinline preload="metadata" poster="static/images/gallery/comparison/davis.jpg" aria-label="DAVIS video">
                   <source src="static/videos/comparison/davis.mp4" type="video/mp4">
                 </video>
                 <figcaption>DAVIS</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="2 of 6: Online">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Online video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/comparison/online.jpg" aria-label="Online video">
                   <source src="static/videos/comparison/online.mp4" type="video/mp4">
                 </video>
                 <figcaption>Online</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="3 of 6: APTv2 (1)">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="APTv2 (1) video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/comparison/aptv2-1.jpg" aria-label="APTv2 (1) video">
                   <source src="static/videos/comparison/aptv2-1.mp4" type="video/mp4">
                 </video>
                 <figcaption>APTv2 (1)</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="4 of 6: APTv2 (2)">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="APTv2 (2) video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/comparison/aptv2-2.jpg" aria-label="APTv2 (2) video">
                   <source src="static/videos/comparison/aptv2-2.mp4" type="video/mp4">
                 </video>
                 <figcaption>APTv2 (2)</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="5 of 6: Artemis (1)">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Artemis (1) video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/comparison/artemis-1.jpg" aria-label="Artemis (1) video">
                   <source src="static/videos/comparison/artemis-1.mp4" type="video/mp4">
                 </video>
                 <figcaption>Artemis (1)</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="6 of 6: Artemis (2)">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Artemis (2) video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/comparison/artemis-2.jpg" aria-label="Artemis (2) video">
                   <source src="static/videos/comparison/artemis-2.mp4" type="video/mp4">
                 </video>
                 <figcaption>Artemis (2)</figcaption>
               </figure>
             </div>
+            <button class="gallery-peek gallery-peek-prev" type="button" aria-label="Previous example" title="Previous example" hidden>
+              <img alt="" loading="lazy">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="gallery-peek gallery-peek-next" type="button" aria-label="Next example" title="Next example" hidden>
+              <img alt="" loading="lazy">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
             <div class="gallery-controls">
               <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous example" title="Previous example">
                 <i class="fas fa-chevron-left" aria-hidden="true"></i>
@@ -309,18 +319,26 @@
           <div class="example-gallery" data-gallery aria-label="Application">
             <div class="gallery-track" role="region" aria-roledescription="carousel" aria-label="Application examples" tabindex="0">
               <figure class="gallery-slide" aria-label="1 of 2: Part-Level Editing">
-                <video class="section-video" controls muted loop playsinline preload="metadata" aria-label="Part-Level Editing video">
+                <video class="section-video" controls muted loop playsinline preload="metadata" poster="static/images/gallery/application/part-level-editing.jpg" aria-label="Part-Level Editing video">
                   <source src="static/videos/application/part-level-editing.mp4" type="video/mp4">
                 </video>
                 <figcaption>Part-Level Editing</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="2 of 2: Temporal & Appearance Editing">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Temporal & Appearance Editing video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/application/temporal-and-appearance-editing.jpg" aria-label="Temporal & Appearance Editing video">
                   <source src="static/videos/application/temporal-and-appearance-editing.mp4" type="video/mp4">
                 </video>
                 <figcaption>Temporal & Appearance Editing</figcaption>
               </figure>
             </div>
+            <button class="gallery-peek gallery-peek-prev" type="button" aria-label="Previous example" title="Previous example" hidden>
+              <img alt="" loading="lazy">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="gallery-peek gallery-peek-next" type="button" aria-label="Next example" title="Next example" hidden>
+              <img alt="" loading="lazy">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
             <div class="gallery-controls">
               <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous example" title="Previous example">
                 <i class="fas fa-chevron-left" aria-hidden="true"></i>
@@ -343,24 +361,32 @@
           <div class="example-gallery" data-gallery aria-label="Limitations">
             <div class="gallery-track" role="region" aria-roledescription="carousel" aria-label="Limitations examples" tabindex="0">
               <figure class="gallery-slide" aria-label="1 of 3: Moving Cameras and Fast Motion">
-                <video class="section-video" controls muted loop playsinline preload="metadata" aria-label="Moving Cameras and Fast Motion video">
+                <video class="section-video" controls muted loop playsinline preload="metadata" poster="static/images/gallery/limitations/moving-camera.jpg" aria-label="Moving Cameras and Fast Motion video">
                   <source src="static/videos/limitations/moving-camera.mp4" type="video/mp4">
                 </video>
                 <figcaption>Moving Cameras and Fast Motion</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="2 of 3: Limited View Coverage">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Limited View Coverage video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/limitations/limited-view-coverage.jpg" aria-label="Limited View Coverage video">
                   <source src="static/videos/limitations/limited-view-coverage.mp4" type="video/mp4">
                 </video>
                 <figcaption>Limited View Coverage</figcaption>
               </figure>
               <figure class="gallery-slide" aria-label="3 of 3: Occlusion">
-                <video class="section-video" controls muted loop playsinline preload="none" aria-label="Occlusion video">
+                <video class="section-video" controls muted loop playsinline preload="none" poster="static/images/gallery/limitations/occlusion.jpg" aria-label="Occlusion video">
                   <source src="static/videos/limitations/occlusion.mp4" type="video/mp4">
                 </video>
                 <figcaption>Occlusion</figcaption>
               </figure>
             </div>
+            <button class="gallery-peek gallery-peek-prev" type="button" aria-label="Previous example" title="Previous example" hidden>
+              <img alt="" loading="lazy">
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="gallery-peek gallery-peek-next" type="button" aria-label="Next example" title="Next example" hidden>
+              <img alt="" loading="lazy">
+              <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
             <div class="gallery-controls">
               <button class="gallery-arrow gallery-prev" type="button" aria-label="Previous example" title="Previous example">
                 <i class="fas fa-chevron-left" aria-hidden="true"></i>
@@ -380,14 +406,20 @@
       <div class="hero-body">
         <div class="container is-max-desktop">
           <h2 class="title is-3 has-text-centered">BibTeX</h2>
-          <pre class="bibtex-entry"><code>@misc{li2026progressiveposeguided4danimal,
-  title={Progressive Pose-Guided 4D Animal Reconstruction from Monocular Video},
-  author={Siyuan Li and Weiying Chen and Yilin Wang and Xinxin Zuo and Xingyu Li and Li Cheng},
-  year={2026},
-  eprint={2607.00157},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2607.00157}
+          <pre class="bibtex-entry"><code>@inproceedings{li2026rewild4d,
+  title     = {Progressive Pose-Guided {4D} Animal Reconstruction from Monocular Video},
+  author    = {Li, Siyuan and Chen, Weiying and Wang, Yilin
+               and Zuo, Xinxin and Li, Xingyu and Cheng, Li},
+  editor    = {Favaro, Paolo and Kukelova, Zuzana and Maki, Atsuto
+               and Rohrbach, Anna and Schindler, Konrad and Tombari, Federico},
+  booktitle = {Computer Vision -- ECCV 2026},
+  year      = {2026},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {192--210},
+  isbn      = {978-3-032-37232-1},
+  doi       = {10.1007/978-3-032-37232-1_11},
+  url       = {https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/7269.pdf}
 }</code></pre>
         </div>
       </div>
